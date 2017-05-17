@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br" ng-app="guilho">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Guilho</title>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
+		<link rel="stylesheet" href="css/efeitos.css">
+		<script src="js/lib/angular.min.js"></script>
+        <script src="js/lib/angular-animate.min.js"></script>
+        <script src="js/lib/angular-route.min.js"></script>
+        <script src="js/lib/angular-resource.min.js"></script>
+		<script src="js/main.js"></script>
+        <script src="js/controllers/politicos-controller.js"></script>
+	</head>
+	<body ng-controller="PoliticosController">
+		<div class="container">
+            
+            <div class="jumbotron">
+                <h1 class="text-center">Guilho</h1>
+            </div>
+            
+            <div ng-repeat="politico in politicos" class="panel panel-default">
+                <div class="panel-heading">
+                    <img class="img-responsive center-block" src="{{politico.foto}}" alt="{{politico.nome}}">
+                </div>
+                <h2 class="panel-title text-center">{{politico.nome}}</h2>
+                <p class="panel-body text-center">{{politico.partido}}</p>
+            </div>
+            <!--Fim do Painel-->
+            
+            
+            
+
+		</div> <!-- fim container -->        
+	</body>
+</html>

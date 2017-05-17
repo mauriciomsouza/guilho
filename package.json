@@ -1,0 +1,24 @@
+{
+  "name": "guilho",
+  "version": "1.0.0",
+  "description": "politics fiscalization made easy",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauriciomsouza/guilho.git"
+  },
+  "author": "mauricio melo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauriciomsouza/guilho/issues"
+  },
+  "homepage": "https://github.com/mauriciomsouza/guilho#readme",
+  "dependencies": {
+    "consign": "^0.1.2",
+    "express": "^4.13.3"
+  }
+}
