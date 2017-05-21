@@ -1,6 +1,7 @@
 angular.module('guilho').controller('PoliticosController', function($scope, $http){
     
     $scope.politicos = [];
+    $scope.filtro = '';
     
     $http.get('v1/politicos')
     .success(function(politicos){
