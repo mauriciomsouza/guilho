@@ -9,16 +9,24 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+        <script src="js/jquery.min.js"></script>
 		<script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-animate.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
         <script src="js/lib/angular-resource.min.js"></script>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
         <script src="js/controllers/politicos-controller.js"></script>
+        <script>
+        $(".modal-wide").on("show.bs.modal", function() {
+  var height = $(window).height() - 200;
+  $(this).find(".modal-body").css("max-height", height);
+});</script>
 	</head>
 	<body ng-controller="PoliticosController">
 		
-        <audio autoplay>
+        <audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 200)">
             <source src="http://mauriciomelo.design/audio/guilho.mp3" type="audio/mpeg">
         </audio>
 
@@ -61,16 +69,37 @@
         </div>
 		
 		<div class="container content">
-            <div ng-repeat="politico in politicos | filter: filtro | orderBy:'+nome_urna'" class="politico-panel col-md-3 col-sm-4">
+            <div ng-repeat="politico in politicos | orderBy:'+nome_urna' | filter: {nome_urna:filtro}" class="politico-panel col-md-3 col-sm-4">
+                <a data-toggle="modal" href="#normalModal">
                 <div class="politico-button">
                     <div class="politico-img">
-                        <object class="img-responsive center-block politico-foto" data="../img/{{politico.nome_urna}}.png" type="image/png">
+                        <object class="img-responsive center-block politico-foto" data="../img/{{politico.nome_urna}}.png" type="image/png" >
                             <img class="img-responsive center-block politico-foto"  src="img/none.png">
                         </object>
                     </div>
                     <h2 class="politico-name text-center">{{politico.nome_urna}}</h2>
                     <p class="partido-name text-center">{{politico.partido}}</p>
                 </div>
+               
+                </a>
+
+ <div id="normalModal" class="modal fade">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title">{{politico.nome_urna}}</h4>
+      </div>
+      <div class="modal-body">
+        <p>One fine body&hellip;</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->  
+                
             </div>
 		</div> 
         

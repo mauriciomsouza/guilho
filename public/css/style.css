@@ -96,6 +96,13 @@ h2 {
 	}
 }
 
+.logo-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
 .base{
   fill:#2A4B8D;
 }
@@ -104,13 +111,15 @@ h2 {
   fill:#B1B1B1;
   animation: anim-guilhotina 0.3s linear;
   animation-fill-mode: forwards;
+  animation-delay: 0.8s;
 }
 
 .letras{
   fill:#fff;
   animation: color 2s ease-in;
-  animation-delay: 1s;
+  animation-delay: 1.8s;
   animation-fill-mode: forwards;
+ 
 }
 
 @keyframes color {
@@ -131,18 +140,21 @@ h2 {
   animation: rola 2s ease-out;
   animation-fill-mode: forwards;
   transform-origin: center center;
+  animation-delay: 0.8s;
 }
 
 .baixo {
   animation: baixo 0.3s ease-in;
   animation-fill-mode: forwards;
   transform-origin: center center;
+  animation-delay: 1.1s;
 }
 
 .lado {
   animation: lado 2s ease-out;
   animation-fill-mode: forwards;
   transform-origin: center center;
+  animation-delay: 0.8s;
 }
 
 @keyframes anim-guilhotina {
@@ -180,6 +192,7 @@ h2 {
     transform: rotate(405deg);
   }
 }
+
 
 .row {
     margin-bottom: 30px;
@@ -236,4 +249,32 @@ footer h1 {
 .politico-panel.ng-enter-active {
     transform: translateY(0px);
     opacity: 1;
+}
+
+.modal.modal-wide .modal-dialog {
+  width: 90%;
+}
+.modal-wide .modal-body {
+  overflow-y: auto;
+}
+
+/* irrelevant styling */
+body { text-align: center; }
+body p { 
+  max-width: 400px; 
+  margin: 20px auto; 
+}
+#tallModal .modal-body p { margin-bottom: 900px }
+
+.content a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.content a:focus{
+    outline: none;
+}
+
+.content a:hover{
+    text-decoration: none;
 }
