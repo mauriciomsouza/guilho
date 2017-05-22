@@ -19,6 +19,28 @@ var api = {};
 
 
 var politicos = [
+    {
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "VERÔNICA COSTA",
+    "nome_urna": "VERÔNICA COSTA",
+    "cargo": "Vereador",
+    "id": 15002,
+    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    "partido": "PMDB",
+    "situacao": "Deferido",
+    "coligacao": "PMDB"
+  },
+    {
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "DAVID MIRANDA",
+    "nome_urna": "DAVID MIRANDA",
+    "cargo": "Vereador",
+    "id": 50500,
+    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    "partido": "PSOL",
+    "situacao": "Deferido",
+    "coligacao": "PSOL"
+  },
      {
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "ALEXANDRE ISQUIERDO MOREIRA",
@@ -32,7 +54,7 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "JOSÉ INALDO FERNANDES DA SILVA",
-    "nome_urna": "BISPO INALDO SILVA",
+    "nome_urna": "INALDO SILVA",
     "cargo": "Vereador",
     "id": 10567,
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
@@ -102,7 +124,7 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "GILBERTO DE OLIVEIRA LIMA",
-    "nome_urna": "DR GILBERTO",
+    "nome_urna": "DR. GILBERTO",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 33123,
@@ -132,7 +154,7 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "JAIRO SOUZA SANTOS JUNIOR",
-    "nome_urna": "JAIRINHO",
+    "nome_urna": "DR. JAIRINHO",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 15126,
@@ -142,7 +164,7 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "JOÃO MENDES DE JESUS",
-    "nome_urna": "JOÃO MENDES DE JESUS",
+    "nome_urna": "JOÃO M. DE JESUS",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 10123,
@@ -202,13 +224,23 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "LUIS ANTONIO DA COSTA RAMOS",
-    "nome_urna": "LUIZ CARLOS RAMOS FILHO",
+    "nome_urna": "LUIZ CARLOS R. FILHO",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 19019,
     "partido": "PTN",
     "situacao": "Deferido",
     "coligacao": "PTN"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "ALEXANDRE ARRAES",
+    "nome_urna": "ALEXANDRE ARRAES",
+    "cargo": "Vereador",
+    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    "id": 45000,
+    "partido": "PSDB",
+    "situacao": "Deferido",
+    "coligacao": "PSDB"
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "MARCELINO ANTONIO D'ALMEIDA",
@@ -272,7 +304,7 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "RAFAEL ALOISIO FREITAS",
-    "nome_urna": "RAFAEL ALOISIO FREITAS",
+    "nome_urna": "RAFAEL A. FREITAS",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 15123,
@@ -321,8 +353,18 @@ var politicos = [
     "coligacao": "PMDB"
   },{
     "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "LEONEL BRIZOLA NETO",
+    "nome_urna": "LEONEL BRIZOLA NETO",
+    "cargo": "Vereador",
+    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    "id": 50000,
+    "partido": "PSOL",
+    "situacao": "Deferido",
+    "coligacao": "PSOL"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "TÂNIA CRISTINA MAGALHÃES BASTOS E SILVA",
-    "nome_urna": "TÂNIA BASTOS'",
+    "nome_urna": "TÂNIA BASTOS",
     "cargo": "Vereador",
     "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
     "id": 10999,

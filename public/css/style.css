@@ -2,11 +2,40 @@ body {
 	width: 100%;
 	height: 100%;
     font-family: 'Roboto', sans-serif;
+    background-image:url(../img/filaguilhotina.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
 }
 
-h1, h2, h3, h4, h5 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
+h2 {
+    margin: 5px 10px;
+    font-weight: 800;
+}
+
+.politico-button {
+    border-radius: 10px;
+    transition: 0.5s ease;
+    border: 2px solid #ddd;
+    margin-bottom: 30px;
+    background-color: #fff;
+}
+
+.politico-button:hover {
+    box-shadow: 0px 5px 15px rgba(0,0,0,0.1);
+    transition: 0.5s ease;
+}
+
+.politico-foto {
+  border-radius: 5px;
+  transform: scale(0.9);
+}
+
+.politico-button p {
+    margin: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    color: #ccc;
 }
 
 .row {
@@ -41,7 +70,7 @@ h1, h2, h3, h4, h5 {
 }
 
 .header {
-	height: 350px;
+	height: 180px;
 }
 
 .logo-container {
@@ -60,10 +89,10 @@ h1, h2, h3, h4, h5 {
 		top: 50%;
 	}
 	90% {
-		top: 200px;
+		top: 100px;
 	}
 	100% {
-		top: 200px;
+		top: 100px;
 	}
 }
 
@@ -152,3 +181,59 @@ h1, h2, h3, h4, h5 {
   }
 }
 
+.row {
+    margin-bottom: 30px;
+}
+
+.headline {
+    font-size: 22px;
+    padding: 30px;
+    color: #ccc;
+}
+
+.search-bar {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #ccc;
+    transition: 0.4s ease;
+}
+
+.search-bar:focus {
+    border: 2px solid #2A4B8D;
+    transition: 0.4s ease;
+}
+
+textarea:focus, input:focus{
+    outline: none;
+}
+
+.content {
+    margin-bottom: 250px;
+}
+
+footer h1 {
+    color: #fff;
+    font-size: 18px;
+    padding: 80px 50px;
+}
+
+.politico-panel {
+    transition: 0.8s;
+}
+
+.politico-panel.ng-leave-active {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.politico-panel.ng-enter {
+    transform: translateY(-20px);
+    opacity: 0;
+}
+
+.politico-panel.ng-enter-active {
+    transform: translateY(0px);
+    opacity: 1;
+}
