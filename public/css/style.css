@@ -6,6 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
+    transition: 0.5s ease;
 }
 
 h2 {
@@ -224,6 +225,7 @@ textarea:focus, input:focus{
 
 .content {
     margin-bottom: 250px;
+    transition: 0.5s ease;
 }
 
 footer h1 {
@@ -251,20 +253,7 @@ footer h1 {
     opacity: 1;
 }
 
-.modal.modal-wide .modal-dialog {
-  width: 90%;
-}
-.modal-wide .modal-body {
-  overflow-y: auto;
-}
-
 /* irrelevant styling */
-body { text-align: center; }
-body p { 
-  max-width: 400px; 
-  margin: 20px auto; 
-}
-#tallModal .modal-body p { margin-bottom: 900px }
 
 .content a{
     color: inherit;
@@ -278,3 +267,81 @@ body p {
 .content a:hover{
     text-decoration: none;
 }
+
+.modal-body {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.modal-dialog {
+    width: 750px;
+}
+
+.modal-panel {
+    margin: 10px;
+    flex-grow: 1;
+    height: 200px;
+    width: 220px;
+    order: 1;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 5px
+}
+
+.panel-head {
+    color: #2A4B8D;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+    font-size: 13px;
+}
+
+.panel-content {
+    line-height: 25px;
+    padding: 10px;
+    display: flex;
+}
+
+.content-icon {
+    width: 30px;
+    order: 1;
+    color: #2A4B8D;
+    text-align: center;
+}
+
+.content-data {
+    color: #aaa;
+    flex-grow: 1;
+    order: 1;
+}
+
+.content-description {
+    flex-grow: 1;
+    order: 1;
+    color: #ccc;
+}
+
+.assiduidade {
+    height: 130px;
+}
+
+.modal-img {
+    width: 100px;
+}
+
+.content-description {
+    font-size: 11px;
+    color: #555;
+    text-align: right;
+}
+
+@media screen and (max-width: 780px) {
+ .modal-dialog {
+     max-width: 100%;
+    }
+}
+
+
+
+

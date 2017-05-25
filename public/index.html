@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+        <script src="https://use.fontawesome.com/a0ba0d5ffa.js"></script>
         <script src="js/jquery.min.js"></script>
 		<script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-animate.min.js"></script>
@@ -70,7 +71,7 @@
 		
 		<div class="container content">
             <div ng-repeat="politico in politicos | orderBy:'+nome_urna' | filter: {nome_urna:filtro}" class="politico-panel col-md-3 col-sm-4">
-                <a data-toggle="modal" href="#normalModal">
+                <a data-toggle="modal" href="#{{politico.id}}">
                 <div class="politico-button">
                     <div class="politico-img">
                         <object class="img-responsive center-block politico-foto" data="../img/{{politico.nome_urna}}.png" type="image/png" >
@@ -83,22 +84,111 @@
                
                 </a>
 
- <div id="normalModal" class="modal fade">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title">{{politico.nome_urna}}</h4>
-      </div>
-      <div class="modal-body">
-        <p>One fine body&hellip;</p>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Fechar</button>
-      </div>
-    </div><!-- /.modal-content -->
-  </div><!-- /.modal-dialog -->
-</div><!-- /.modal -->  
+                     <div id="{{politico.id}}" class="modal fade">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                                    <object class="modal-img" data="../img/{{politico.nome_urna}}.png" type="image/png" >
+                                        <img class="modal-img" src="img/none.png">
+                                    </object>
+                              
+                                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                
+                            </div>
+                          <div class="modal-body">
+                            <div class="perfil"></div>
+                                
+                              <div class="modal-panel dados-eleitorais">
+                                    
+                                  <p class="panel-head"><i class="fa fa-address-card" aria-hidden="true"></i>&nbsp;Dados Eleitorais</p>  
+                                  
+                                  <div class="panel-content">
+                                  
+                                  <div class="content-icon">
+                                    <p><i class="fa fa-user" aria-hidden="true"></i></p>
+                                    <p><i class="fa fa-folder" aria-hidden="true"></i></p>
+                                    <p><i class="fa fa-handshake-o" aria-hidden="true"></i></p>
+                                    <p><i class="fa fa-calendar" aria-hidden="true"></i></p>
+                                      <p><i class="fa fa-graduation-cap" aria-hidden="true"></i></p>
+                                      <p><i class="fa fa-university" aria-hidden="true"></i></p>
+                                  </div>
+                                  
+                                  <div class="content-data">
+                                    <p><span style="font-weight: bold; color: black;">{{politico.nome_urna}}</span></p>
+                                  
+                                    <p>{{politico.cargo}}</p>
+                                  
+                                    <p>{{politico.partido}}</p>
+                                  
+                                    <p>{{politico.nascimento}}</p>
+                                  
+                                    <p>{{politico.escolaridade}}</p>
+                                  
+                                    <p>{{politico.ocupacao}}</p>
+                                
+                                  </div>
+                                      
+                                    <div class="content-description">
+                                        <p>NOME</p>
+                                  
+                                        <p>CARGO</p>
+                                  
+                                        <p>PARTIDO</p>
+                                  
+                                        <p>NASCIMENTO</p>
+                                  
+                                        <p>ESCOLARIDADE</p>
+                                  
+                                        <p>OCUPAÇÃO</p>
+                                  </div>
+                                      
+                                  </div>
+                                
+                              </div>
+                            
+                              <div class="modal-panel grafico-politico">
+                                
+                                  <p class="panel-head"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Gráfico Político</p>  
+                              
+                              
+                              </div>
+                            
+                              <div class="modal-panel evolucao-patrimonio">
+                              
+                                  <p class="panel-head"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Evolução do Patrimônio</p>  
+                              
+                              
+                              </div>
+                            
+                              <div class="modal-panel doacoes-recebidas">
+                              
+                                  <p class="panel-head"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Doações Recebidas</p>  
+                              
+                              </div>
+                            
+                              <div class="modal-panel votacoes">
+                              
+                                  <p class="panel-head"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Votações</p>  
+                              
+                              </div>
+                            
+                              <div class="modal-panel projetos-lei">
+                              
+                                  <p class="panel-head"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Projetos de Lei</p>  
+                              
+                              
+                              </div>
+                            
+                              <div class="modal-panel assiduidade">
+                              
+                                  <p class="panel-head"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;Assiduidade</p>  
+                                  
+                              </div>
+                          
+                            </div>
+                        </div><!-- /.modal-content -->
+                      </div><!-- /.modal-dialog -->
+                    </div><!-- /.modal -->  
                 
             </div>
 		</div> 
