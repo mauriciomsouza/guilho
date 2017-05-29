@@ -25,7 +25,24 @@ var politicos = [
     "nome_urna": "VERÔNICA COSTA",
     "cargo": "VEREADOR",
     "id": 15002,
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    "doacoes": [
+        {"nome_doador": "JBS",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "ODEBRECHT",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "PRIMO",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "OAS",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "DELTA",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "FUNDO PARTIDÁRIO",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "FURACÃO 2000",
+        "valor_doado": "R$ 300.000,00"},
+        {"nome_doador": "FM O DIA",
+        "valor_doado": "R$ 300.000,00"}
+    ],
     "partido": "PMDB",
     "situacao": "Deferido",
     "coligacao": "PMDB"
@@ -36,7 +53,7 @@ var politicos = [
     "nome_urna": "DAVID MIRANDA",
     "cargo": "VEREADOR",
     "id": 50500,
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "partido": "PSOL",
     "situacao": "Deferido",
     "coligacao": "PSOL"
@@ -47,7 +64,7 @@ var politicos = [
     "nome_urna": "ALEXANDRE ISQUIERDO",
     "cargo": "VEREADOR",
     "id": 25025,
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "partido": "DEM",
     "situacao": "Deferido",
     "coligacao": "DEM"
@@ -57,7 +74,7 @@ var politicos = [
     "nome_urna": "INALDO SILVA",
     "cargo": "VEREADOR",
     "id": 10567,
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "partido": "PRB",
     "situacao": "Deferido",
     "coligacao": "PRB"
@@ -66,7 +83,7 @@ var politicos = [
     "nome_completo": "CARLO FERREIRA DE CAIADO CASTRO",
     "nome_urna": "CARLO CAIADO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 25622,
     "partido": "DEM",
     "situacao": "Deferido",
@@ -75,7 +92,7 @@ var politicos = [
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "CARLOS NANTES BOLSONARO",
     "nome_urna": "CARLOS BOLSONARO",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "cargo": "VEREADOR",
     "id": 20120,
     "partido": "PSC",
@@ -86,7 +103,7 @@ var politicos = [
     "nome_completo": "CESAR EPITÁCIO MAIA",
     "nome_urna": "CESAR MAIA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 25500,
     "partido": "DEM",
     "situacao": "Deferido",
@@ -99,7 +116,7 @@ var politicos = [
     "nome_completo": "JOAO FRANCISCO INACIO BRAZAO",
     "nome_urna": "CHIQUINHO BRAZÃO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15101,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -109,7 +126,7 @@ var politicos = [
     "nome_completo": "CLAUDIO BONFIM DE CASTRO E SILVA",
     "nome_urna": "CLÁUDIO CASTRO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 20010,
     "partido": "PSC",
     "situacao": "Deferido",
@@ -119,7 +136,7 @@ var politicos = [
     "nome_completo": "CARLOS EDUARDO DE MATTOS",
     "nome_urna": "DR. CARLOS EDUARDO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 77044,
     "partido": "SD",
     "situacao": "Deferido",
@@ -129,7 +146,7 @@ var politicos = [
     "nome_completo": "GILBERTO DE OLIVEIRA LIMA",
     "nome_urna": "DR. GILBERTO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 33123,
     "partido": "PMN",
     "situacao": "Deferido",
@@ -139,7 +156,7 @@ var politicos = [
     "nome_completo": "FELIPE MICHEL",
     "nome_urna": "FELIPE MICHEL",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 45001,
     "partido": "PSDB",
     "situacao": "Deferido",
@@ -149,7 +166,7 @@ var politicos = [
     "nome_completo": "ITALO PEREIRA CAMPOS",
     "nome_urna": "ITALO CIBA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 70669,
     "partido": "PT do B",
     "situacao": "Deferido",
@@ -159,7 +176,7 @@ var politicos = [
     "nome_completo": "JAIRO SOUZA SANTOS JUNIOR",
     "nome_urna": "DR. JAIRINHO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15126,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -169,37 +186,67 @@ var politicos = [
     "nome_completo": "JOÃO MENDES DE JESUS",
     "nome_urna": "JOÃO M. DE JESUS",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 10123,
     "partido": "PRB",
     "situacao": "Deferido",
     "coligacao": "PRB"
   },{
     "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "JOÃO RICARDO RIBAS JÚNIOR",
+    "nome_urna": "DR. JOÃO RICARDO",
+    "cargo": "VEREADOR",
+    
+    "id": 15999,
+    "partido": "PMDB",
+    "situacao": "Deferido",
+    "coligacao": "PMDB"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "JONES BARBOSA DE MOURA",
     "nome_urna": "JONES MOURA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 55111,
     "partido": "PSD",
     "situacao": "Deferido",
     "coligacao": "PSD"
-  }, {
+  },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "JORGE MIGUEL FELIPPE",
     "nome_urna": "JORGE FELIPPE",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15800,
     "partido": "PMDB",
     "situacao": "Deferido",
     "coligacao": "PMDB"
-  }, {
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "OTONI MOURA DE PAULO JUNIOR",
+    "nome_urna": "OTONI DE PAULA",
+    "cargo": "VEREADOR",
+    
+    "id": 20200,
+    "partido": "PSC",
+    "situacao": "Deferido",
+    "coligacao": "PSC"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "JORGE HENRIQUE MARTINS MANAIA",
+    "nome_urna": "DR. JORGE MANAIA",
+    "cargo": "VEREADOR",
+    
+    "id": 77456,
+    "partido": "SD",
+    "situacao": "Deferido",
+    "coligacao": "SD"
+  },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "TADEU AMORIM DE BARROS JUNIOR",
     "nome_urna": "JUNIOR DA LUCINHA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15620,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -209,7 +256,7 @@ var politicos = [
     "nome_completo": "LEANDRO LYRA BRAGA DOGNINI",
     "nome_urna": "LEANDRO LYRA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 30300,
     "partido": "NOVO",
     "situacao": "Deferido",
@@ -219,7 +266,7 @@ var politicos = [
     "nome_completo": "LUCIANA GONÇALVES DE NOVAES",
     "nome_urna": "LUCIANA NOVAES",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 13535,
     "partido": "PT",
     "situacao": "Deferido",
@@ -229,7 +276,7 @@ var politicos = [
     "nome_completo": "LUIS ANTONIO DA COSTA RAMOS",
     "nome_urna": "LUIZ CARLOS R. FILHO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 19019,
     "partido": "PTN",
     "situacao": "Deferido",
@@ -239,7 +286,7 @@ var politicos = [
     "nome_completo": "ALEXANDRE ARRAES",
     "nome_urna": "ALEXANDRE ARRAES",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 45000,
     "partido": "PSDB",
     "situacao": "Deferido",
@@ -249,7 +296,7 @@ var politicos = [
     "nome_completo": "MARCELINO ANTONIO D'ALMEIDA",
     "nome_urna": "MARCELINO D'ALMEIDA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 11369,
     "partido": "PP",
     "situacao": "Deferido",
@@ -259,7 +306,7 @@ var politicos = [
     "nome_completo": "MARCELLO MORAES SICILIANO",
     "nome_urna": "MARCELLO SICILIANO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 31888,
     "partido": "PHS",
     "situacao": "Deferido",
@@ -269,7 +316,7 @@ var politicos = [
     "nome_completo": "MARCELO ARAR",
     "nome_urna": "MARCELO ARAR",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 14000,
     "partido": "PTB",
     "situacao": "Deferido",
@@ -279,37 +326,77 @@ var politicos = [
     "nome_completo": "MARIELLE FRANCISCO DA SILVA",
     "nome_urna": "MARIELLE FRANCO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 50777,
     "partido": "PSOL",
     "situacao": "Deferido",
     "coligacao": "Mudar é possível"
-  }, {
-    "situacao_pos_pleito": "Eleito por QP",
-    "nome_completo": "OTONI MOURA DE PAULO JUNIOR",
-    "nome_urna": "OTONI DE PAULA JR",
-    "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
-    "id": 20200,
-    "partido": "PSC",
-    "situacao": "Deferido",
-    "coligacao": "PSC"
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "PAULO PINHEIRO",
     "nome_urna": "PAULO PINHEIRO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 50111,
     "partido": "PSOL",
     "situacao": "Deferido",
     "coligacao": "Mudar é possível"
   },{
     "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "ADALMIR D'AGUILA DE SOUZA",
+    "nome_urna": "PROF. ADALMIR",
+    "cargo": "VEREADOR",
+    
+    "id": 45779,
+    "partido": "PSDB",
+    "situacao": "Deferido",
+    "coligacao": "PSDB"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "ROGÉRIO DE CASTRO LOPES",
+    "nome_urna": "PROF. ROGÉRIO ROCAL",
+    "cargo": "VEREADOR",
+    
+    "id": 14433,
+    "partido": "PTB",
+    "situacao": "Deferido",
+    "coligacao": "Mudar é possível"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "ELISEU GOMES KESSLER",
+    "nome_urna": "ELISEU KESSLER",
+    "cargo": "VEREADOR",
+    
+    "id": 55622,
+    "partido": "PSD",
+    "situacao": "Deferido",
+    "coligacao": "PSD"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "FERNANDO WILLIAM FERREIRA",
+    "nome_urna": "FERNANDO WILLIAM",
+    "cargo": "VEREADOR",
+    
+    "id": 12603,
+    "partido": "PDT",
+    "situacao": "Deferido",
+    "coligacao": "PDT"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
+    "nome_completo": "PAULO SANTOS MESSINA",
+    "nome_urna": "PAULO MESSINA",
+    "cargo": "VEREADOR",
+    
+    "id": 90123,
+    "partido": "PROS",
+    "situacao": "Deferido",
+    "coligacao": "PROS"
+  },{
+    "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "RAFAEL ALOISIO FREITAS",
     "nome_urna": "RAFAEL A. FREITAS",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15123,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -319,7 +406,7 @@ var politicos = [
     "nome_completo": "REIMONT LUIZ OTONI SANTA BARBARA",
     "nome_urna": "REIMONT",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 13333,
     "partido": "PT",
     "situacao": "Deferido",
@@ -329,7 +416,7 @@ var politicos = [
     "nome_completo": "RENATO ATHAYDE SILVA",
     "nome_urna": "RENATO CINCO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 50555,
     "partido": "PSOL",
     "situacao": "Deferido",
@@ -339,7 +426,7 @@ var politicos = [
     "nome_completo": "JOSE RENATO CARDOZO MOURA",
     "nome_urna": "RENATO MOURA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 12500,
     "partido": "PDT",
     "situacao": "Deferido",
@@ -349,7 +436,7 @@ var politicos = [
     "nome_completo": "ROSA MARIA ORLANDO FERNANDES",
     "nome_urna": "ROSA FERNANDES",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15150,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -359,7 +446,7 @@ var politicos = [
     "nome_completo": "LEONEL BRIZOLA NETO",
     "nome_urna": "LEONEL BRIZOLA NETO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 50000,
     "partido": "PSOL",
     "situacao": "Deferido",
@@ -369,7 +456,7 @@ var politicos = [
     "nome_completo": "TÂNIA CRISTINA MAGALHÃES BASTOS E SILVA",
     "nome_urna": "TÂNIA BASTOS",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 10999,
     "partido": "PRB",
     "situacao": "Deferido",
@@ -379,7 +466,7 @@ var politicos = [
     "nome_completo": "TARCÍSIO MOTTA DE CARVALHO",
     "nome_urna": "TARCÍSIO MOTTA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 50123,
     "partido": "PSOL",
     "situacao": "Deferido",
@@ -389,7 +476,7 @@ var politicos = [
     "nome_completo": "MARIA TERESA BERGHER",
     "nome_urna": "TERESA BERGHER",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 45245,
     "partido": "PSDB",
     "situacao": "Deferido",
@@ -399,7 +486,7 @@ var politicos = [
     "nome_completo": "THIAGO KWIATKOWSKI RIBEIRO",
     "nome_urna": "THIAGO K. RIBEIRO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15159,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -407,9 +494,9 @@ var politicos = [
   },{
     "situacao_pos_pleito": "Eleito por QP",
     "nome_completo": "ROOSEVELT BARRETO BARCELOS",
-    "nome_urna": "VAL",
+    "nome_urna": "VAL DO CEASA",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 51888,
     "partido": "PEN",
     "situacao": "Deferido",
@@ -419,7 +506,7 @@ var politicos = [
     "nome_completo": "VERA LUCIA FERREIRA LINS",
     "nome_urna": "VERA LINS",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 11111,
     "partido": "PP",
     "situacao": "Deferido",
@@ -429,7 +516,7 @@ var politicos = [
     "nome_completo": "WILLIAN CARVALHO DOS SANTOS",
     "nome_urna": "WILLIAN COELHO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 15040,
     "partido": "PMDB",
     "situacao": "Deferido",
@@ -439,7 +526,7 @@ var politicos = [
     "nome_completo": "ANTONIO JOSE PAPERA DE AZEVEDO",
     "nome_urna": "ZICO",
     "cargo": "VEREADOR",
-    "foto": "https://www.1plusx.com/app/mu-plugins/all-in-one-seo-pack-pro/images/default-user-image.png",
+    
     "id": 14012,
     "partido": "PTB",
     "situacao": "Deferido",

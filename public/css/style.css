@@ -76,8 +76,9 @@ h2 {
 
 .logo-container {
   position: absolute;
-  left: calc(50% + 25px);
+  left: 50%;
   transform: translate(-50%, -50%);
+    width: 235px;
 	animation: logo-position 5s linear;
 	animation-fill-mode: forwards;
 }
@@ -320,6 +321,9 @@ footer h1 {
     flex-grow: 1;
     order: 1;
     color: #ccc;
+    font-size: 11px;
+    color: #555;
+    text-align: right;
 }
 
 .assiduidade {
@@ -330,17 +334,69 @@ footer h1 {
     width: 100px;
 }
 
-.content-description {
-    font-size: 11px;
-    color: #555;
-    text-align: right;
-}
-
 @media screen and (max-width: 780px) {
  .modal-dialog {
      max-width: 100%;
     }
 }
+.panel-doacoes {
+    line-height: 25px;
+    padding: 10px;
+    display: flex;
+    height: 150px;
+    overflow-y: scroll;
+}
+
+.lista_doadores {
+    color: #aaa;
+    flex-grow: 1;
+    order: 1;
+}
+
+.lista_valor {
+    flex-grow: 1;
+    order: 1;
+    color: #ccc;
+    font-size: 11px;
+    color: #555;
+    text-align: right;
+}
+
+.panel-total {
+    color: #2A4B8D;
+    padding: 5px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    border-top: 1px solid #aaa;
+    font-size: 13px;
+}
+
+.panel-doacoes::-webkit-scrollbar{ width:6px; height:6px; 
+}
+.panel-doacoes::-webkit-scrollbar-button:start:decrement, 
+.panel-doacoes::-webkit-scrollbar-button:end:increment{ 
+  display:block;
+  height:0;
+  background-color:transparent;
+}
+.panel-doacoes::-webkit-scrollbar-track-piece{
+  background-color:#FAFAFA;
+  -webkit-border-radius:0;
+  -webkit-border-bottom-right-radius:8px;
+  -webkit-border-bottom-left-radius:8px;
+}
+.panel-doacoes::-webkit-scrollbar-thumb:vertical{
+  height:50px;
+  background-color:#2A4B8D;
+  -webkit-border-radius:8px;
+}
+.panel-doacoes::-webkit-scrollbar-thumb:horizontal{
+  width:50px;
+  background-color:#2A4B8D;
+  -webkit-border-radius:8px;
+}
+
 
 
 

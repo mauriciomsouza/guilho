@@ -70,7 +70,7 @@
         </div>
 		
 		<div class="container content">
-            <div ng-repeat="politico in politicos | orderBy:'+nome_urna' | filter: {nome_urna:filtro}" class="politico-panel col-md-3 col-sm-4">
+            <div ng-repeat="politico in politicos | orderBy:'+nome_urna' | filter: filtro" class="politico-panel col-md-3 col-sm-4">
                 <a data-toggle="modal" href="#{{politico.id}}">
                 <div class="politico-button">
                     <div class="politico-img">
@@ -164,6 +164,17 @@
                               
                                   <p class="panel-head"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Doações Recebidas</p>  
                               
+                                  <div class="panel-doacoes">
+                                    <div class="lista_doadores">
+                                       <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'">{{doacao.nome_doador}}</p>
+                                    </div>
+                                    <div class="lista_valor">
+                                       <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'">{{doacao.valor_doado}}</p>
+                                    </div>
+                                  </div>
+                                  
+                                  <p class="panel-total">TOTAL: R$ 1.000.000,00</p>
+                                  
                               </div>
                             
                               <div class="modal-panel votacoes">
