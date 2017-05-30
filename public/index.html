@@ -16,11 +16,11 @@
         <script src="js/lib/angular-animate.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
         <script src="js/lib/angular-resource.min.js"></script>
-        <script src="js/jquery.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/main.js"></script> 
         <script src="js/controllers/politicos-controller.js"></script>
         <script src="js/bower-angular-locale-pt-br.js"></script>
+        
         <script>
         $(".modal-wide").on("show.bs.modal", function() {
   var height = $(window).height() - 200;
@@ -157,9 +157,8 @@
                             
                               <div class="modal-panel evolucao-patrimonio">
                               
-                                  <p class="panel-head"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Evolução do Patrimônio</p>  
-                              
-                              
+                                    <p class="panel-head"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Evolução do Patrimônio</p>  
+                                
                               </div>
                             
                               <div class="modal-panel doacoes-recebidas">
@@ -186,6 +185,16 @@
                               
                                   <p class="panel-head"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Votações</p>  
                               
+                                  <div class="panel-leis">
+                                    
+                                    <div class="leis-wrapper" ng-repeat="lei in politico.projetos_lei">
+                                       <p class="data_lei">{{lei.numero_lei}}<br>
+                                        <span class="status_lei">{{lei.status_lei | uppercase}}</span></p>
+                                       <p class="lista_leis">{{lei.lei_ordinaria | uppercase}}</p>
+                                  </div>
+                                      
+                                  </div>
+                                  
                               </div>
                             
                               <div class="modal-panel projetos-lei">
@@ -653,5 +662,9 @@
             Nossas ações determinam nosso futuro, o índice de guilhotinagem serve para ilustrar o quão útil está sendo um político para sua cidade.
             </h1>
         </footer>
+        
+        
+        
+        
 	</body>
 </html>

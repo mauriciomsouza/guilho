@@ -547,6 +547,10 @@ footer h1 {
     height: 105px;
 }
 
+#area-chart,{
+  min-height: 250px;
+z-index: 1100;
+}
 
 
 
