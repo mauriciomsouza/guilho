@@ -169,7 +169,7 @@
                                   <div class="panel-doacoes">
                                     <div class="lista_doadores">
                                        <div ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'"><div ng-init="limit = 25; moreShown = false">
-                                        {{doacao.nome_doador | limitTo: limit}}
+                                        {{doacao.nome_doador | limitTo: limit | uppercase}}
                                         </div></div>
 
                                     </div>
@@ -191,7 +191,16 @@
                               <div class="modal-panel projetos-lei">
                               
                                   <p class="panel-head"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Projetos de Lei</p>  
-                              
+                                
+                                  <div class="panel-leis">
+                                    
+                                    <div class="leis-wrapper" ng-repeat="lei in politico.projetos_lei">
+                                       <p class="data_lei">{{lei.numero_lei}}<br>
+                                        <span class="status_lei">{{lei.status_lei | uppercase}}</span></p>
+                                       <p class="lista_leis">{{lei.lei_ordinaria | uppercase}}</p>
+                                  </div>
+                                      
+                                  </div>
                               
                               </div>
                             

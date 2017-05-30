@@ -348,17 +348,18 @@ footer h1 {
 }
 
 .lista_doadores {
-    color: #aaa;
+    color: #999;
     flex-grow: 1;
     order: 1;
+    font-size: 12px;
+    
 }
 
 .lista_valor {
     flex-grow: 1;
     order: 1;
     color: #ccc;
-    font-size: 11px;
-    color: #555;
+    font-size: 12px;
     text-align: right;
 }
 
@@ -392,6 +393,71 @@ footer h1 {
   -webkit-border-radius:8px;
 }
 .panel-doacoes::-webkit-scrollbar-thumb:horizontal{
+  width:50px;
+  background-color:#2A4B8D;
+  -webkit-border-radius:8px;
+}
+
+.panel-leis {
+    overflow-y: scroll;
+    height: 165px;
+    line-height: 20px;
+    padding: 10px;
+    width: 100%;
+}
+
+.leis-wrapper {
+    width: 100%;
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.data_lei {
+    color: #aaa;
+    font-size: 12px;
+    margin-right: 10px;
+    order: 1;
+    flex-grow: 1;
+}
+
+.status_lei {
+    background-color:#2A4B8D;
+    color: #fff;
+    text-align: center;
+    border-radius: 20px;
+    font-size: 8px;
+    padding: 5px 10px;
+    width: 100%;
+}
+
+.lista_leis {
+    width: auto;
+    order: 1;
+    flex-grow: 4;
+    color: #999;
+    font-size: 13px;
+}
+
+.panel-leis::-webkit-scrollbar{ width:6px; height:6px; 
+}
+.panel-leis::-webkit-scrollbar-button:start:decrement, 
+.panel-leis::-webkit-scrollbar-button:end:increment{ 
+  display:block;
+  height:0;
+  background-color:transparent;
+}
+.panel-leis::-webkit-scrollbar-track-piece{
+  background-color:#FAFAFA;
+  -webkit-border-radius:0;
+  -webkit-border-bottom-right-radius:8px;
+  -webkit-border-bottom-left-radius:8px;
+}
+.panel-leis::-webkit-scrollbar-thumb:vertical{
+  height:50px;
+  background-color:#2A4B8D;
+  -webkit-border-radius:8px;
+}
+.panel-leis::-webkit-scrollbar-thumb:horizontal{
   width:50px;
   background-color:#2A4B8D;
   -webkit-border-radius:8px;

@@ -60,6 +60,25 @@ var politicos =   [{
     "nascimento": "21/04/1974",
     "escolaridade": "SUPERIOR INCOMPLETO",
     "ocupacao": "VEREADOR",
+    "projetos_lei": [
+        {"numero_lei": "6145/2017",
+         "lei_ordinaria": "Institui o Festival de Rap - Rio Contra as Drogas - de prevenção à dependência química nas comunidades cariocas e dá outras providências.",
+         "status_lei": "EM VIGOR"
+        },{"numero_lei": "6034/2015",
+         "lei_ordinaria": "Estabelece as características do Serviço Público de Emergência e o rol mínimo de serviços que serão classificados como de emergência no território do Município.",
+         "status_lei": "EM VIGOR"
+        },{"numero_lei": "6001/2015",
+         "lei_ordinaria": "Institui ciclos de palestras sobre a prevenção à gravidez precoce na rede pública de ensino do Município.",
+         "status_lei": "EM VIGOR"
+        },
+        {"numero_lei": "5994/2015",
+         "lei_ordinaria": "Estabelece diretrizes para Programa Pedagógico Hospitalar destinado às crianças e adolescentes hospitalizados, no âmbito do Município.",
+         "status_lei": "EM VIGOR"
+        },{"numero_lei": "5916/2015",
+         "lei_ordinaria": "Dispõe sobre a instituição do Programa de Braços Abertos relativo ao uso abusivo de drogas no âmbito do Município do Rio de Janeiro.",
+         "status_lei": "EM VIGOR"
+        },
+    ]
   },
     {
     "situacao_pos_pleito": "Eleito por QP",
