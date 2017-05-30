@@ -327,7 +327,7 @@ footer h1 {
 }
 
 .assiduidade {
-    height: 130px;
+    height: 180px;
 }
 
 .modal-img {
@@ -395,6 +395,90 @@ footer h1 {
   width:50px;
   background-color:#2A4B8D;
   -webkit-border-radius:8px;
+}
+
+.cal-legend {
+    flex-grow: 1;
+    order: 1;
+    margin: 5px;
+    height: 100%;
+}
+
+.activity-year {
+    width: 80px;
+    text-align: center;
+    background-color: #2A4B8D;
+    color: #fff;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+.legend {
+    font-size: 10px;
+}
+
+.legend-wrapper {
+    margin-top: 20px;
+}
+
+.legend-color {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
+    float: left;
+    margin-right: 5px;
+    margin-top: 7px;
+}
+
+.cal-graph {
+    flex-grow: 6;
+    order: 1;
+    font-size: 11px;
+    color: #555;
+    text-align: right;
+    display: flex;
+    margin: 5px;
+    height: 100%;
+}
+
+.cal-block {
+    flex-grow: 6;
+    order: 1;
+    max-width: 60px;
+}
+
+.cal-month {
+    width: 100%;
+    text-align: left;
+    font-size: 9px;
+}
+
+.cal-day {
+    width: 10px;
+    height: 10px;
+    background-color: #63FFA2;
+    margin-right: 2px;
+    margin-bottom: 2px;
+    float: left;
+}
+
+.no-day {
+    background-color: #eee;
+}
+
+.fault {
+   background-color: #FF7763;
+}
+
+.present {
+    background-color: #63FFA2;
+}
+
+.panel-activity {
+    line-height: 25px;
+    padding: 10px;
+    display: flex;
+    height: 105px;
 }
 
 

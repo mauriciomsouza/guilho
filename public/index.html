@@ -9,6 +9,7 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
+        
         <script src="https://use.fontawesome.com/a0ba0d5ffa.js"></script>
         <script src="js/jquery.min.js"></script>
 		<script src="js/lib/angular.min.js"></script>
@@ -167,7 +168,7 @@
                               
                                   <div class="panel-doacoes">
                                     <div class="lista_doadores">
-                                       <div ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'"><div ng-init="limit = 28; moreShown = false">
+                                       <div ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'"><div ng-init="limit = 25; moreShown = false">
                                         {{doacao.nome_doador | limitTo: limit}}
                                         </div></div>
 
@@ -197,6 +198,436 @@
                               <div class="modal-panel assiduidade">
                               
                                   <p class="panel-head"><i class="fa fa-calendar-check-o" aria-hidden="true"></i>&nbsp;Assiduidade</p>  
+                                  
+                                  <div class="panel-activity">
+                                      <div class="cal-legend">
+                                      <p class="activity-year">2017</p>
+                                      <div class="legend-wrapper">
+                                      <div class="legend-color no-day"></div><p class="legend">SEM SESSÃO</p>
+                                      <div class="legend-color present"></div><p class="legend">PRESENÇA</p>
+                                      <div class="legend-color fault"></div><p class="legend">FALTA</p>
+                                      </div>
+                                      </div>
+
+                                      <div class="cal-graph">
+                                        
+                                        <div class="cal-block">
+                                            <p class="cal-month">JAN</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">FEV</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">MAR</p>
+                                            <div class="cal-day"></div>
+                                              <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">ABR</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">MAI</p>
+                                            <div class="cal-day"></div>
+                                              <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">JUN</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">JUL</p>
+                                            <div class="cal-day"></div>
+                                              <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">AGO</p>
+                                            <div class="cal-day"></div>
+                                              <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">SET</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">OUT</p>
+                                            <div class="cal-day"></div>
+                                              <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">NOV</p>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                          
+                                          <div class="cal-block">
+                                            <p class="cal-month">DEZ</p>
+                                            <div class="cal-day no-day"></div>
+                                              <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day fault"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day"></div>
+                                            <div class="cal-day no-day"></div>
+                                            <div class="cal-day"></div>
+                                        </div>
+                                        
+                                      </div>
+                                  </div>
+                                  
                                   
                               </div>
                           
