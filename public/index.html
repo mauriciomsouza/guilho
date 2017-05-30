@@ -19,6 +19,7 @@
         <script src="js/bootstrap.min.js"></script>
 		<script src="js/main.js"></script>
         <script src="js/controllers/politicos-controller.js"></script>
+        <script src="js/bower-angular-locale-pt-br.js"></script>
         <script>
         $(".modal-wide").on("show.bs.modal", function() {
   var height = $(window).height() - 200;
@@ -166,14 +167,17 @@
                               
                                   <div class="panel-doacoes">
                                     <div class="lista_doadores">
-                                       <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'">{{doacao.nome_doador}}</p>
+                                       <div ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'"><div ng-init="limit = 28; moreShown = false">
+                                        {{doacao.nome_doador | limitTo: limit}}
+                                        </div></div>
+
                                     </div>
-                                    <div class="lista_valor">
-                                       <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'">{{doacao.valor_doado}}</p>
+                                    <div class="lista_valor" ng-init="total=0;">
+                                       <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'" ng-init="$parent.total = total + doacao.valor_doado" >{{doacao.valor_doado | currency:'R$ ':2}}</p>
                                     </div>
                                   </div>
                                   
-                                  <p class="panel-total">TOTAL: R$ 1.000.000,00</p>
+                                  <p class="panel-total">TOTAL: {{total | currency:'R$ ':2}}</p>
                                   
                               </div>
                             

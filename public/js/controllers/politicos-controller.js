@@ -10,4 +10,5 @@ angular.module('guilho').controller('PoliticosController', function($scope, $htt
     .error(function(erro){
         console.log('Erro obtendo a lista de políticos!');
     });
+    
 });
