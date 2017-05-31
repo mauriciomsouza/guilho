@@ -9,7 +9,6 @@
 		<link rel="stylesheet" href="css/bootstrap-theme.min.css">
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
-        
         <script src="https://use.fontawesome.com/a0ba0d5ffa.js"></script>
         <script src="js/jquery.min.js"></script>
 		<script src="js/lib/angular.min.js"></script>
@@ -151,7 +150,8 @@
                               <div class="modal-panel grafico-politico">
                                 
                                   <p class="panel-head"><i class="fa fa-pie-chart" aria-hidden="true"></i>&nbsp;Gráfico Político</p>  
-                              
+                                
+                                  <div class="chart-panel1"></div>
                               
                               </div>
                             
@@ -159,11 +159,13 @@
                               
                                     <p class="panel-head"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Evolução do Patrimônio</p>  
                                 
+                                  <div class="chart-panel2"></div>
+                                  
                               </div>
                             
                               <div class="modal-panel doacoes-recebidas">
                               
-                                  <p class="panel-head"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Doações Recebidas</p>  
+                                  <p class="panel-head"><i class="fa fa-money" aria-hidden="true"></i>&nbsp;Doações Recebidas</p>
                               
                                   <div class="panel-doacoes">
                                     <div class="lista_doadores">
@@ -174,7 +176,9 @@
                                     </div>
                                     <div class="lista_valor" ng-init="total=0;">
                                        <p ng-repeat="doacao in politico.doacoes | orderBy:'+nome_doador'" ng-init="$parent.total = total + doacao.valor_doado" >{{doacao.valor_doado | currency:'R$ ':2}}</p>
+                                       
                                     </div>
+                                      
                                   </div>
                                   
                                   <p class="panel-total">TOTAL: {{total | currency:'R$ ':2}}</p>
@@ -185,14 +189,13 @@
                               
                                   <p class="panel-head"><i class="fa fa-thumbs-o-up" aria-hidden="true"></i>&nbsp;Votações</p>  
                               
+                                  
+                                  
                                   <div class="panel-leis">
-                                    
-                                    <div class="leis-wrapper" ng-repeat="lei in politico.projetos_lei">
-                                       <p class="data_lei">{{lei.numero_lei}}<br>
-                                        <span class="status_lei">{{lei.status_lei | uppercase}}</span></p>
-                                       <p class="lista_leis">{{lei.lei_ordinaria | uppercase}}</p>
-                                  </div>
-                                      
+                       
+                                        
+                                       <p class="no-exist">NÃO EXISTEM VOTAÇÕES CADASTRADAS</p>
+                             
                                   </div>
                                   
                               </div>
@@ -201,14 +204,18 @@
                               
                                   <p class="panel-head"><i class="fa fa-book" aria-hidden="true"></i>&nbsp;Projetos de Lei</p>  
                                 
+                                  
+                                  
                                   <div class="panel-leis">
                                     
                                     <div class="leis-wrapper" ng-repeat="lei in politico.projetos_lei">
                                        <p class="data_lei">{{lei.numero_lei}}<br>
                                         <span class="status_lei">{{lei.status_lei | uppercase}}</span></p>
                                        <p class="lista_leis">{{lei.lei_ordinaria | uppercase}}</p>
-                                  </div>
+                                    </div>
                                       
+                                    
+                                   
                                   </div>
                               
                               </div>
