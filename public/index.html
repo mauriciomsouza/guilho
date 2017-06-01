@@ -10,7 +10,7 @@
 		<link rel="stylesheet" href="css/reset.css">
 		<link rel="stylesheet" href="css/style.css">
         <script src="https://use.fontawesome.com/a0ba0d5ffa.js"></script>
-        <script src="js/jquery.min.js"></script>
+        <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		<script src="js/lib/angular.min.js"></script>
         <script src="js/lib/angular-animate.min.js"></script>
         <script src="js/lib/angular-route.min.js"></script>
@@ -20,17 +20,13 @@
         <script src="js/controllers/politicos-controller.js"></script>
         <script src="js/bower-angular-locale-pt-br.js"></script>
         
-        <script>
-        $(".modal-wide").on("show.bs.modal", function() {
-  var height = $(window).height() - 200;
-  $(this).find(".modal-body").css("max-height", height);
-});</script>
+
 	</head>
 	<body ng-controller="PoliticosController">
 		
         <audio onloadeddata="var audioPlayer = this; setTimeout(function() { audioPlayer.play(); }, 200)">
             <source src="http://mauriciomelo.design/audio/guilho.mp3" type="audio/mpeg">
-        </audio>
+        </audio>			
 
         <div class="header">
             <div class="wrapper">
@@ -89,11 +85,18 @@
                       <div class="modal-dialog">
                         <div class="modal-content">
                           <div class="modal-header">
+                              <div class="modal-head-img">
                                     <object class="modal-img" data="../img/{{politico.nome_urna}}.png" type="image/png" >
                                         <img class="modal-img" src="img/none.png">
                                     </object>
-                              
+                                </div>
+                                <div class="guilho-position">
+                                    <span class="guilho-position-number">12º</span>
+                                    <span class="guilho-position-label">NA FILA DA GUILHOTINA</span>
+                                </div>
+                              <div class="modal-close-button">
                                 <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                                </div>
                                 
                             </div>
                           <div class="modal-body">
@@ -159,8 +162,6 @@
                               
                                     <p class="panel-head"><i class="fa fa-line-chart" aria-hidden="true"></i>&nbsp;Evolução do Patrimônio</p>  
                                 
-                                  <div class="chart-panel2"></div>
-                                  
                               </div>
                             
                               <div class="modal-panel doacoes-recebidas">
@@ -669,9 +670,6 @@
             Nossas ações determinam nosso futuro, o índice de guilhotinagem serve para ilustrar o quão útil está sendo um político para sua cidade.
             </h1>
         </footer>
-        
-        
-        
         
 	</body>
 </html>

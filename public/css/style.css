@@ -294,13 +294,57 @@ footer h1 {
     border-radius: 5px
 }
 
+.modal-header {
+    display: flex;
+}
+
+.modal-head-img {
+    height: 35px;
+}
+
+.modal-img {
+    position: absolute;
+    transform: translateY(-35px);
+}
+
+.guilho-position {
+    width: 190px;
+    order: 1;
+    position: absolute;
+    transform: translateX(100px);
+}
+
+.guilho-position-number {
+    font-size: 43px;
+    font-weight: bold;
+    color: #AD1F17;
+    float: left;
+    margin-top: -5px;
+    padding-right: 10px;
+}
+
+.guilho-position-label {
+    font-size: 18px;
+}
+
+.modal-close-button {
+    flex-grow: 1;
+    order: 1;
+}
+
+.close {
+    position: absolute;
+    font-size: 32px;
+    right: 25px;
+}
+
 .panel-head {
-    color: #2A4B8D;
+    background-color: #2A4B8D;
+    color: #fff;
     padding: 5px;
     width: 100%;
-    text-align: center;
-    border-bottom: 1px solid #aaa;
     font-size: 13px;
+    text-align: center;
 }
 
 .panel-content {
@@ -568,18 +612,60 @@ footer h1 {
     width: 100%;
     height: 170px;
 
+}	
+
+#wrap{
+  background:#fff;
+  position:absolute;
+  left:50%;
+  top:50%;
+  margin:-200px 0 0 -200px;
+}
+#chart{
+  opacity:0;
+}
+#pointArea,
+#balloonArea {
+}
+#pointArea .point{
+  position:absolute;
+  width:12px; height:12px;
+  border-radius:10px;
+  margin: -6px 0 0 -6px;
+  background:#fff;
+  border:solid 2px #999;
 }
 
-.chart-panel2 {
-    background-image: url(../img/patrimonio.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
-
+#pointArea .point:hover{
+  width:16px; height:16px;
+  border-radius:10px;
+  margin: -8px 0 0 -8px;
 }
 
+
+#balloonArea .balloon{
+  position:absolute;
+  background:#3b456f;
+  width:82px; height:64px;
+  color:#fff;
+  margin: -86px 0 0 -20px;
+  display:none;
+  padding:8px;
+}
+#balloonArea .balloon .label{
+  font-size:13px;
+  text-align:center;
+  margin-bottom:6px;
+}
+#balloonArea .balloon .score{
+  font-size:26px;
+  text-align:center;
+  margin-bottom:6px;
+}
+#balloonArea .balloon .maxScore{
+  font-size:14px;
+  text-align:right;
+}
 
 
 
