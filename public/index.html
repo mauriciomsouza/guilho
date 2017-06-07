@@ -59,14 +59,12 @@
         </div>
         
         <div class="row">
-		  <div class="form-group">
-            <form>
-                <input class="col-md-4 col-md-offset-4 col-xs-12 col-sm-8 col-sm-offset-2 search-bar" ng-model="filtro" ng-model-options="{debounce: 500}" type="text" class="form-control text-center" id="politico" placeholder="ENCONTRE O POLÍTICO">
-            </form>
+		  <div class="col-md-4 col-md-offset-4 col-xs-12 col-sm-8 col-sm-offset-2 form-group">
+                <input class="search-bar" ng-model="filtro" ng-model-options="{debounce: 500}" type="text" class="form-control text-center" id="politico" placeholder="ENCONTRE O POLÍTICO">
 		  </div>
         </div>
 		
-		<div class="container content">
+		<div class="container content politics-panel">
             <div ng-repeat="politico in politicos | orderBy:'+nome_urna' | filter: filtro" class="politico-panel col-md-3 col-sm-4">
                 <a data-toggle="modal" href="#{{politico.id}}">
                 <div class="politico-button">

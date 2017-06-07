@@ -24,6 +24,7 @@ var politicos =   [{
     "nome_urna": "VERÔNICA COSTA",
     "cargo": "VEREADOR",
     "id": 15002,
+    "fila": 1,
     "doacoes": [
         {"nome_doador": "MARIO ANTUNES",
         "valor_doado": 20000},
