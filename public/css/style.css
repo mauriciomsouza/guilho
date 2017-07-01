@@ -1,3 +1,28 @@
+.manifesto{
+	margin-top: 50px;
+	margin-bottom: 50px;
+}
+
+.manifesto p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 400;
+	font-size: 110%;
+}
+
+.avatar{
+	width: 100%;
+}
+
+.criadores p{
+	font-family: 'Roboto', sans-serif;
+	font-weight: 300;
+}
+
+.criadores{
+	width: 95%;
+	margin: auto;
+}
+
 body {
 	width: 100%;
 	height: 100%;
@@ -9,201 +34,43 @@ body {
     
 }
 
-h2 {
-    margin: 5px 10px;
-    font-weight: 800;
+.modal-open[style] {
+padding-right: 0px !important;
+}
+
+.politico-name {
+    padding-top: 10px;
+    font-weight:lighter;
+}
+
+.partido-name {
+    margin: 5px;
+    padding-bottom: 10px;
+    font-weight: bold;
+    color: #fff;
 }
 
 .politico-button {
-    border-radius: 2px;
+    border-radius: 5px;
     transition: 0.5s ease;
     margin-bottom: 30px;
-    background-color: #fff;
-    box-shadow:0 1px 3px rgba(0,0,0,0.12);
-
+    background-color: #1e88e5;
+    box-shadow:0 3px 7px rgba(0,0,0,0.12);
 }
 
-   
-
 .politico-button:hover {
-    box-shadow:  0 3px 6px rgba(0,0,0,0.23);
+    box-shadow:  0 5px 10px rgba(0,0,0,0.33);
     transition: 0.5s ease;
+    background-color: #ff1744;
 }
 
 .politico-foto {
-  border-radius: 5px;
   transform: scale(0.9);
-}
-
-.politico-button p {
-    margin: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 100;
-    color: #ccc;
-    padding-bottom: 10px;
 }
 
 .row {
     margin-left: 30px;
     margin-right: 30px;
-}
-
-.wrapper {
-	position: absolute;
-	z-index: 2;
-	top: 0;
-	left: 0;
-	width: 100%;
-	height: 100%;
-	animation: fade-background 5s linear;
-	animation-fill-mode: forwards;
-}
-
-@keyframes fade-background {
-	0% {
-		background-color: rgba(255, 255, 255, 1);
-		z-index: 2;
-        position: fixed;
-	}
-	90% {
-		background-color: rgba(255, 255, 255, 1);
-		z-index: 2;
-        position: fixed;
-	}
-	100% {
-		background-color: rgba(0, 0, 0, 0);
-		z-index: -1;
-        position: absolute;
-	}
-}
-
-.header {
-	height: 180px;
-}
-
-.logo-container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
-    width: 235px;
-	animation: logo-position 5s linear;
-	animation-fill-mode: forwards;
-}
-
-@keyframes logo-position {
-	0% {
-		top: 50%;
-	}
-	80% {
-		top: 50%;
-	}
-	90% {
-		top: 100px;
-	}
-	100% {
-		top: 100px;
-	}
-}
-
-.logo-container {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.base{
-  fill:#1e88e5;
-}
-	
-.guilhotina{
-  fill:#B1B1B1;
-  animation: anim-guilhotina 0.3s linear;
-  animation-fill-mode: forwards;
-  animation-delay: 0.8s;
-}
-
-.letras{
-  fill:#fff;
-  animation: color 2s ease-in;
-  animation-delay: 1.8s;
-  animation-fill-mode: forwards;
- 
-}
-
-@keyframes color {
-  from {
-    fill: #fff;
-
-  } to {
-    fill: #1e88e5;
-  }
-}
-
-.cabeca{
-  fill: #AD1F17;
-  
-}
-
-.rola {
-  animation: rola 2s ease-out;
-  animation-fill-mode: forwards;
-  transform-origin: center center;
-  animation-delay: 0.8s;
-}
-
-.baixo {
-  animation: baixo 0.3s ease-in;
-  animation-fill-mode: forwards;
-  transform-origin: center center;
-  animation-delay: 1.1s;
-}
-
-.lado {
-  animation: lado 2s ease-out;
-  animation-fill-mode: forwards;
-  transform-origin: center center;
-  animation-delay: 0.8s;
-}
-
-@keyframes anim-guilhotina {
-  from {
-     transform: translateY(0px);
-  }
-  to {
-    transform: translateY(43px);
-  }
-}
-
-@keyframes baixo {
-  0% {
-    transform: translateY(0px);
-  }
-  100% {
-    transform: translateY(32px);
-  }
-}
-
-@keyframes lado {
-  from {
-    transform: translateX(0px);
-  }
-  to {
-    transform: translateX(148px);
-  }
-}
-
-@keyframes rola {
-  0% {
-    transform: rotate(0px);
-  }
- 100% {
-    transform: rotate(405deg);
-  }
-}
-
-
-.row {
     margin-bottom: 30px;
 }
 
@@ -246,11 +113,14 @@ h2 {
     margin: 0;
     width: 100%;
     padding-top: 30px;
-    background-color: #e0e0e0;
 }
 
 textarea:focus, input:focus{
     outline: none;
+}
+
+.patrichart {
+    transform: translateX(30px);
 }
 
 .content {
@@ -259,12 +129,17 @@ textarea:focus, input:focus{
 }
 
 footer h1 {
-    color: #fff;
     padding: 80px 50px;
 }
 
 .politico-panel {
     transition: 0.8s;
+}
+
+.politico-label {
+    color: #fff;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .politico-panel.ng-leave-active {
@@ -300,10 +175,12 @@ footer h1 {
 .modal-body {
     display: flex;
     flex-wrap: wrap;
+    background-color: #eee;
 }
 
 .modal-dialog {
     width: 750px;
+    border-radius: 0px;
 }
 
 .modal-panel {
@@ -313,8 +190,6 @@ footer h1 {
     width: 220px;
     order: 1;
     background-color: #fff;
-    border: 1px solid #aaa;
-    border-radius: 5px
 }
 
 .modal-header {
@@ -323,6 +198,7 @@ footer h1 {
 
 .modal-head-img {
     height: 35px;
+    z-index: 2;
 }
 
 .modal-img {
@@ -340,7 +216,7 @@ footer h1 {
 .guilho-position-number {
     font-size: 43px;
     font-weight: bold;
-    color: #AD1F17;
+    color: #ff1744;
     float: left;
     margin-top: -5px;
     padding-right: 10px;
@@ -627,15 +503,53 @@ footer h1 {
    font-weight: bold;
 }
 
-.chart-panel1 {
-    background-image: url(../img/grafico.png);
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 170px;
+.chart-wrapper {
+    display: flex;
+}
 
+.chart-panel1 {
+    flex-grow:5;
+    padding-top: 20px;
 }	
+
+.chart-panel2 {
+    flex-grow:1;
+    height: 160px;
+    text-align: center;
+    padding-top: 5px;
+}	
+
+.indexhead {
+    font-size: 12px;
+    
+}
+
+.politicoindex {
+    font-size: 72px;
+    font-weight: bold;
+    color: #FF1744;
+}
+
+.soloindex {
+    display: flex;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 10px;
+}
+
+.indexlabel {
+    flex-grow: 3;
+    text-align: left;
+    font-size: 12px;
+}
+
+.indexnumber {
+    flex-grow: 1;
+     text-align: right;
+    font-size: 12px;
+}
+
+
 
 #wrap{
   background:#fff;
@@ -690,7 +604,107 @@ footer h1 {
   text-align:right;
 }
 
+.letras {
+    fill: #fff;
+    animation: apareceletra 0.3s ease 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes apareceletra {
+    from{
+      fill: #fff;  
+        
+    }to {
+    fill: #1E88E5; 
+    }
+}
+
+.cabeca {
+    fill: #FF1744;
+    animation: rola 2s linear 3s;
+    animation-fill-mode: forwards;
+    transform-origin: center;
+}
+
+@keyframes rola {
+    0% {
+        transform: translate(0px,0px) rotate(0deg);
+    } 25% {
+        transform: translate(75px,0px)rotate(160deg);
+    } 38% {
+        transform: translate(95px,58px)rotate(240deg);
+    } 100% {
+        transform: translate(280px,58px)rotate(740deg);
+    }
+}
+
+.base {
+    fill: #1E88E5;
+    
+}
+
+.contorno {
+    fill: #fff;
+    animation: desce 0.8s ease 3s;
+    animation-fill-mode: forwards;
+}
 
 
 
+.guilhotina {
+    fill: #E0E0E0;
+    animation: desce 0.8s ease 3s;
+    animation-fill-mode: forwards;
+}
 
+@keyframes desce {
+    from {
+        transform: translateY(0px);
+    } to {
+        transform: translateY(73px);
+    }
+}
+
+.header-wrapper {
+    height: 100vh;
+    width: 100%;
+    animation: showcontent 0.5s ease 6s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes showcontent {
+    from{
+        height: 100vh;
+    }
+    to {
+        height: 200px;
+    }
+}
+
+.header {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+
+}
+
+.manifestobutton {
+    position: fixed;
+    right: 30px;
+    top: 30px;
+    background-color: #FF1744;
+    color: #fff;
+    padding: 15px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+    z-index: 3000;
+}
+
+.manifestobutton:hover {
+    text-decoration: none;
+    background-color: #1E88E5;
+    color: #fff;
+    transition: 0.3s;
+}
